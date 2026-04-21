@@ -4,6 +4,17 @@
     "description": "Logos Delivery Module - High-level message-delivery API",
     "author": "Logos Core Team",
     "type": "core",
+    "interface": "universal",
+    "codegen": {
+        "impl_header": "delivery_module_plugin.h"
+    },
+    "events": [
+        "messageSent",
+        "messageError",
+        "messagePropagated",
+        "messageReceived",
+        "connectionStateChanged"
+    ],
     "category": "protocol",
     "main": "delivery_module_plugin",
     "dependencies": [],
